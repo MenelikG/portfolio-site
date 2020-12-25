@@ -1,9 +1,11 @@
   .project-container {
-    max-width: 1000px;
+    max-width: 850px;
     margin: auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   
+  /* Remember for deminsions for putting video in monitor screen, width=100% height=485px */
+  /* Montiors */
   .monitor {
       background: #000; 
       position: relative;
@@ -40,29 +42,22 @@
       overflow: hidden;
   }
   
-  
-  @media all and (min-width: 960px) {
-      #monitor {
-          -webkit-animation: tvflicker .2s infinite alternate; 
-          -moz-animation:    tvflicker .5s infinite alternate; 
-          -o-animation:      tvflicker .5s infinite alternate; 
-          animation:         tvflicker .5s infinite alternate; 
-      }
-  
-      @-webkit-keyframes tvflicker {
-        0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
-        100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
-      }
-      @-moz-keyframes tvflicker {
-        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-      }
-      @-o-keyframes tvflicker {
-        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-      }
-      @keyframes tvflicker {
-        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
-        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
-      }
-  }
+/* Project Descriptions */
+.project-description h3{
+  margin-top: -20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.project-description p{
+  text-align: center;
+  font-size: 13px;
+}
+
+.project-description button{
+  text-align: center;
+}
+
+.description-lists{
+  font-size: 13px;
+}
