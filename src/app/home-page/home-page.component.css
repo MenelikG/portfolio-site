@@ -1,31 +1,89 @@
 #backgroundVideo {
-    position: fixed;
-    right: 0;
-    /* bottom: 0;  */
     min-width: 100%;
-    min-height: 100%;
+    height:auto;
+    z-index: -1;
+
   }
   
   /* Add some content at the bottom of the video/page */
-  .heading {
-    /* position:absolute;
-    width:50%;
-    height:50%;
-    left:50%;
-    top:50%;
-    margin-left:-250px;
-    margin-top:-50px; */
+  .heading-container {
     position:absolute;
     width:50%;
-    height:50%;
+    height:20%;
     left:50%;
     top:50%;
     margin-left:-25%;
     margin-top:-5%;
-    color: rgba(245, 245, 245, 0.788);
+    color: white;
     text-align: center;
   }
 
-  .heading span{
-      color: white;
+  .heading-container h1{
+    font-size: 40px;
   }
+
+  /* .heading-container span{
+      color: red;
+  } */
+
+  .button-container{
+    position: absolute;
+    width:50%;
+    height:20%;
+    left:50%;
+    top:50%;
+    margin-left:-25%;
+    margin-top:2%;
+    color: white;
+    text-align: center;
+  }
+  .button-container .view-work-btn{
+    /* padding:0.35em 1.2em; */
+    padding:0.7em 2.4em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-size: 18px;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+  }
+
+  .button-container .view-work-btn:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+  }
+
+/* Bounce effect on home-page button */
+  .button-container .bounce{ 
+    animation: bouncy 2s infinite linear;
+  }
+
+  @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+/* Media tags */
+@media (min-aspect-ratio: 16/9) {
+    #backgroundVideo {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
